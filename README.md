@@ -1,6 +1,6 @@
 Link to UAVArenaCPNF : [https://felipeam96.github.io/UAVArenaCNPF/](https://felipeam96.github.io/Photogrammetrie_CNPF/)
 
-![image](https://github.com/FelipeAM96/UAVArenaCNPF/blob/master/Ecran.jpg)
+![image](https://github.com/FelipeAM96/Photogrammetrie_CNPF/blob/main/Ecran.jpg)
 
 
 ## About
