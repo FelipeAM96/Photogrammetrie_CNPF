@@ -116,7 +116,7 @@ $(function(){
             $product.children().each(function(){
                 var productId = $(this).val();
 
-                var prefix = "/";
+                var prefix = "https://raw.githubusercontent.com/FelipeAM96/Photogrammetrie_CNPF/main/data/";
                 if (window.location.href.toLowerCase().indexOf("opendronemap.github.io") !== -1){
                     prefix = "/UAVArena/";
                 }
