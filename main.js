@@ -43,7 +43,6 @@ $(function(){
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-
     // Populate datasets
     var $dataset = $("#dataset");
     $dataset.on('change', function(e){
@@ -117,11 +116,8 @@ $(function(){
                 var productId = $(this).val();
 
                 var prefix = "https://raw.githubusercontent.com/FelipeAM96/Photogrammetrie_CNPF/main/data/";
-                if (window.location.href.toLowerCase().indexOf("opendronemap.github.io") !== -1){
-                    prefix = "/UAVArena/";
-                }
 
-                layers[engineId + '|' + datasetId + '|' + productId] = L.tileLayer(prefix + 'data/' + engineId +'/' + datasetId + '/' + productId + '/tiles/{z}/{x}/{y}.png', {
+                layers[engineId + '|' + datasetId + '|' + productId] = L.tileLayer(prefix + engineId +'/' + datasetId + '/' + productId + '/tiles/{z}/{x}/{y}.png', {
                     noWrap: true,
                     maxZoom: 99,
                     maxNativeZoom: 21,
@@ -167,5 +163,4 @@ $(function(){
 
     updateLayers();
     centerOnLayer();
-
 });
